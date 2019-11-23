@@ -29,6 +29,26 @@ const Section = () => {
                             </div>
                         </div>
                     </div>
+                    {/* Font awesome second image */}
+                    <div className="col-md-4 d-flex justify-content-center">
+                        <div className="feature-card rounded-sm py-4 px-4">
+                            <div className="d-flex flex-column">
+                                <div className="mx-auto splash position-relative d-flex justify-content-center align-items-center"
+                                    style={{width: "120px"}}>
+                                    <img src="/images/splash-bg.svg" alt="" className="img-auto"/>
+                                    <div className="position-absolute d-flex justify-content-center align-items-center"
+                                        style={{top: "0", left: "0", right: "0", bottom: "0"}}>
+                                        <span className="h1"><i className="fas fa-graduation-cap"></i></span>
+                                    </div>
+                                </div>
+
+                                <div className="mt-auto text-center">
+                                    <p className="title mb-3">Less pointless googling</p>
+                                    <p className="small">So, you have an impossible homework to which you can't find solutions online? Let your peers help you out!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                  </div>   
             </div>
         </main>
