@@ -1,3 +1,4 @@
+
 .navbar{
     background-color:transparent!important;
     display:flex;
@@ -25,4 +26,18 @@
     animation-duration: 13s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
+}
+
+.header-context {
+    width: 80%;
+    max-width: 350px;
+}
+.main-header a{
+    color: #fff;
+}
+.btn-accent{
+    background-color: #3e468f;
+}
+.btn-rounded{
+    border-radius: 50px;
 }
