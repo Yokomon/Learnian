@@ -57,3 +57,17 @@ body {
     height: 150px;
     overflow-y: hidden;
 }
+.upload-body {
+    background-color: #fafafa;
+}
+.fade-overflow {
+    position: relative;
+    overflow: hidden;
+    line-height: 1.2em;
+    height: 2.4em;
+}
+.btn-outline-accent {
+    background-color: transparent;
+    border-color: #3e468f;
+    color: #3e468f
+}
