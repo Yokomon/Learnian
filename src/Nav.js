@@ -17,8 +17,8 @@ const Example = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar className="main-header navbar bg-transparent pt-2" color="faded" light expand="lg">
+    <div className="body main-header py-2">
+      <Navbar className="navbar navbar-expand-lg navbar-light bg-transparent">
         <div className="container">
         <NavbarBrand className="brand text-white navbar-brand animated infinite shake" href="/">Learnian</NavbarBrand>
         <NavbarToggler onClick={toggle} />

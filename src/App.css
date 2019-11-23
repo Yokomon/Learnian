@@ -1,4 +1,6 @@
-
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
 .navbar{
     background-color:transparent!important;
     display:flex;
@@ -43,4 +45,7 @@
 }
 .feature-card .splash {
     color: #3e468f;
+}
+.feature-card{
+    width:300px;
 }
