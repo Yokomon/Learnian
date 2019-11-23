@@ -1,37 +1,14 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from 'reactstrap';
+import React from 'react';
+import Nav from './Nav';
 
-const Example = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Learnian</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <NavLink href="/user/signup">Sign up</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/user/login">Log-in</NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
+class App extends React.Component{
+    render(){
+        return(
+            <div>
+                <Nav></Nav>
+            </div>
+        )
+    }
 }
 
-export default Example;
+export default App;

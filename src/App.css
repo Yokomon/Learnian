@@ -1,0 +1,28 @@
+.navbar{
+    background-color:transparent!important;
+    display:flex;
+    position:relative;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+.main-header{
+    background-image: url(/images/main-bg.svg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+#signup{
+    color: #6a75ff;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+#login{
+    color: #fff;
+}
+.brand{
+    border-bottom: 2px solid #fff;
+    animation-duration: 13s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
