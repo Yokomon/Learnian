@@ -49,3 +49,11 @@ body {
 .feature-card{
     width:300px;
 }
+.upload-item {
+    overflow: hidden;
+    max-width: 300px;
+}
+.upload-preview {
+    height: 150px;
+    overflow-y: hidden;
+}
