@@ -36,6 +36,27 @@ const Section = () => {
                                 <div className="mx-auto splash position-relative d-flex justify-content-center align-items-center"
                                     style={{width: "120px"}}>
                                     <img src="/images/splash-bg.svg" alt="" className="img-auto"/>
+                                    <div class="position-absolute d-flex justify-content-center align-items-center"
+                                        style={{top: "0", left: "0", right: "0", bottom: "0"}}>
+                                        <span className="h1"><i className="fas fa-users"></i></span>
+                                    </div>
+                                </div>
+
+                                <div className="mt-auto text-center">
+                                    <p className="title mb-3">Group work</p>
+                                    <p className="small">Who said Rome was built in a day?? When we work as one, incredible things can be accomplished and what may seem impossible is just with a blink of an eye.</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                  
+                    {/* Font awesome third image */}
+                    <div className="col-md-4 d-flex justify-content-center">
+                        <div className="feature-card rounded-sm py-4 px-4">
+                            <div className="d-flex flex-column">
+                                <div className="mx-auto splash position-relative d-flex justify-content-center align-items-center"
+                                    style={{width: "120px"}}>
+                                    <img src="/images/splash-bg.svg" alt="" className="img-auto"/>
                                     <div className="position-absolute d-flex justify-content-center align-items-center"
                                         style={{top: "0", left: "0", right: "0", bottom: "0"}}>
                                         <span className="h1"><i className="fas fa-graduation-cap"></i></span>
