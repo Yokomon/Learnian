@@ -19,9 +19,15 @@ body {
     border-radius: 50px;
     background-color: #fff;
 }
-
+#signup:hover{
+    background-color: transparent;
+    color: #fff;
+}
 #login{
     color: #fff;
+}
+#login:hover{
+    border-bottom: 1px solid #fff;
 }
 .brand{
     border-bottom: 2px solid #fff;
@@ -39,6 +45,8 @@ body {
 }
 .btn-accent{
     background-color: #3e468f;
+    color: #fff !important;
+    border-bottom: 6px solid #0000002e;
 }
 .btn-rounded{
     border-radius: 50px;
