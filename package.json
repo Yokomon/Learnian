@@ -1,34 +1,33 @@
 {
   "name": "learnian",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router": "^5.1.2",
-    "react-scripts": "3.2.0",
-    "reactstrap": "^8.1.1"
-  },
+  "version": "1.0.0",
+  "description": "a app created to making learning easy for students and teaching easy for lecturers",
+  "main": "app.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client-install": "npm install --prefix client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run app\" \"npm run client\"",
+    "heroku-postbuid": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yokomon/Learnian.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "e-learning",
+    "udemyclone",
+    "javascript",
+    "react",
+    "node",
+    "streaming"
+  ],
+  "author": "Akuagwu Philemon and Yokmon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yokomon/Learnian/issues"
+  },
+  "homepage": "https://github.com/Yokomon/Learnian#readme"
 }
