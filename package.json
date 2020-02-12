@@ -29,5 +29,13 @@
   "bugs": {
     "url": "https://github.com/Yokomon/Learnian/issues"
   },
-  "homepage": "https://github.com/Yokomon/Learnian#readme"
+  "homepage": "https://github.com/Yokomon/Learnian#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.8.11",
+    "morgan": "^1.9.1"
+  }
 }

@@ -7,12 +7,12 @@ const path = require('path');
 const { DB, PORT } = process.env;
 const app = express();
 app.use(express.json);
-mongoose
-  .connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('Connected to DB');
-  })
-  .catch(err => console.log(err));
+// mongoose
+//   .connect(DB, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => {
+//     console.log('Connected to DB');
+//   })
+//   .catch(err => console.log(err));
 if (process.env.NODE_ENV === 'production') {
   //set a static folder
   app.use(express.static('client/build'));
@@ -21,6 +21,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => `Server running on PORT ${PORT} 🔥`);
+app.listen(PORT, () => console.log(`Server running on PORT ${PORT} 🔥`));
