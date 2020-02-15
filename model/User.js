@@ -1,31 +1,34 @@
+const Joi = require('@hapi/joi');
+const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 
-const schema = mongoose.Schema;
+const { Schema } = mongoose;
 
-const UserSchema = new schema({
+const UserSchema = new Schema({
   username: {
     type: String,
     required: true
   },
-  passoword: {
+  password: {
     type: String,
     required: true
   },
-  UserId: {
+  email: {
     type: String,
     required: true
   },
-  Email: {
+  userId: {
     type: String,
-    required: true
+    required: false
   },
+
   isLecturer: {
     type: Boolean,
-    required: true
+    required: false
   },
   isAdmin: {
     type: Boolean,
-    required: true
+    required: false
   },
 
   date: {
@@ -33,5 +36,30 @@ const UserSchema = new schema({
     default: Date.now
   }
 });
+// UserSchema.methods.generateAuthToken = function() {
+//   const token = jwt.sign(
+//     {
+//       _id: this._id
+//     },
+//     'somethingnice'
+//   );
+//   return token;
+// };
 
-module.exports = User = mongoose.model('user', UserSchema);
+// function validateUser(user) {
+//   const schema = Joi.object({
+//     username: Joi.string().required(),
+//     email: Joi.string()
+//       .required()
+//       .email(),
+//     password: Joi.string()
+//       .min(3)
+//       .max(1029)
+//       .required()
+//   });
+//   return schema.validate(user);
+// }
+
+const User = mongoose.model('User', UserSchema);
+module.exports.User = User;
+// module.validateUser = validateUser;

@@ -5,7 +5,8 @@ const router = require('express').Router();
  @access Public
  */
 router.get('/', (req, res) => {
-  Item.find()
-    .sort({ date: -1 })
-    .then(item => res.json(item));
+  res.send(
+    'hello guys ... i am working ...and i know u know that u should be checking proxy/api/users'
+  );
 });
+module.exports = router;
